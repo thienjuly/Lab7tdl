@@ -8,22 +8,27 @@ namespace Lab7
 {
     internal class Task
     {
-        protected string description;
+        protected string Description;
+
         public Task()
         {
-            this.setdescription("Default Task");
+            this.SetDescription("Default task");
         }
-        public Task (string description)
+        public Task(string description)
         {
-            this.setDescription(description);
+            this.SetDescription(description);
         }
-        public string getDescription()
+        public string GetDescription()
         {
-            return this.description;
+            return Description;
         }
-        public void displayTask()
+        public void SetDescription(string description)
         {
-
+            this.Description = description;
+        }
+        public void DisplayTask()
+        {
+            Console.WriteLine(GetDescription());
         }
     }
 }
